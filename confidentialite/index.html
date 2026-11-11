@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hulotte – Confidentialité</title>
+<style>
+  :root {
+    --bg: #fdf8ec; --card: #ffffff; --ink: #1f1a2e; --soft: #5b5470; --line: #1f1a2e; --accent: #33c9a0; --dot: #e6dcc3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17141f; --card: #221e2d; --ink: #f4f0ff; --soft: #b8b0cc; --line: #f4f0ff; --accent: #33c9a0; --dot: #2a2537; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: var(--ink); background: var(--bg);
+    background-image: radial-gradient(var(--dot) 2px, transparent 2px); background-size: 28px 28px;
+    font: 17px/1.6 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 6px; font-weight: 900; }
+  .date { color: var(--soft); margin: 0 0 28px; font-weight: 600; }
+  section {
+    background: var(--card); border: 3px solid var(--line); border-radius: 24px;
+    box-shadow: 5px 5px 0 var(--line); padding: 20px 22px; margin: 0 0 22px;
+  }
+  .short { background: var(--accent); color: #1f1a2e; border-color: #1f1a2e; box-shadow: 5px 5px 0 #1f1a2e; }
+  h2 { font-size: 1.25rem; margin: 0 0 8px; font-weight: 900; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; margin: 0 0 6px; }
+  strong { font-weight: 800; }
+  a { color: inherit; font-weight: 700; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité de Hulotte</h1>
+  <p class="date">Dernière mise à jour : 11 novembre 2026</p>
+
+  <section class="short">
+    <h2>En bref</h2>
+    <ul>
+      <li>Hulotte ne collecte <strong>aucune donnée</strong> : nous n'avons ni serveur, ni compte, ni publicité, ni outil de mesure d'audience.</li>
+      <li>Ce qui doit passer d'un appareil à l'autre (les règles, les demandes de temps) passe par <strong>votre propre iCloud</strong>. Nous ne pouvons pas le lire.</li>
+      <li>Le temps passé sur chaque app reste <strong>sur l'appareil de l'enfant</strong>. Apple ne laisse pas ces chiffres en sortir, même pour nous.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Qui sommes-nous ?</h2>
+    <p>Hulotte est une application de contrôle parental pour iPhone et iPad, éditée par Noham Cholleton. Pour toute question sur cette politique, écrivez-nous à <a href="mailto:contact@noham.eu">contact@noham.eu</a>.</p>
+  </section>
+
+  <section>
+    <h2>Ce qui reste sur l'appareil</h2>
+    <p>Ces informations sont enregistrées sur l'appareil seulement :</p>
+    <ul>
+      <li><strong>Le code parent.</strong> Il est gardé sous forme chiffrée (empreinte) dans le trousseau de l'appareil.</li>
+      <li><strong>Face ID ou Touch ID.</strong> C'est iOS qui fait la vérification : Hulotte ne reçoit jamais votre visage ni votre empreinte.</li>
+      <li><strong>Les personnages</strong> que vous créez, vos préférences de notifications et l'icône choisie.</li>
+      <li><strong>Le temps d'écran détaillé</strong> (temps par app, nombre de déblocages). Il est calculé et affiché par Apple (Temps d'écran) et ne quitte pas l'appareil de l'enfant.</li>
+      <li><strong>La caméra</strong> sert seulement à scanner le code de liaison. Aucune image n'est enregistrée.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ce qui passe par votre iCloud</h2>
+    <p>Pour que vous puissiez gérer l'appareil de votre enfant depuis le vôtre, Hulotte utilise iCloud (CloudKit) d'Apple. Ces données sont enregistrées dans <strong>la base iCloud privée du parent</strong>, partagée uniquement avec les appareils de l'enfant que vous avez reliés :</p>
+    <ul>
+      <li>Le prénom de l'enfant, le niveau de ses défis (6-8 ans, 9-11 ans, 12 ans et plus) et les règles que vous choisissez (horaires, limites, tâches, cagnotte de temps).</li>
+      <li>L'empreinte chiffrée du code parent, pour que l'enfant ne puisse pas changer le rôle de son appareil sans ce code.</li>
+      <li>L'état de chaque appareil de l'enfant : son nom (par exemple « iPad de Léa »), son type, si le contrôle est actif, le temps libre restant.</li>
+      <li>Les demandes de temps, les tâches terminées et un court journal (par exemple « Demande acceptée : 15 min »).</li>
+      <li>Votre prénom, tel qu'il figure sur votre compte iCloud, pour que l'enfant voie qui gère son appareil.</li>
+    </ul>
+    <p>Les apps choisies sont transmises sous forme de jetons opaques fournis par Apple. Hulotte ne connaît pas leur nom.</p>
+    <p>Nous n'avons <strong>pas accès</strong> à ces données : elles sont stockées et protégées par Apple, selon sa <a href="https://www.apple.com/fr/legal/privacy/">politique de confidentialité</a>.</p>
+  </section>
+
+  <section>
+    <h2>Achats</h2>
+    <p>L'abonnement Hulotte+ est vendu et géré par Apple via l'App Store. Nous ne recevons jamais vos coordonnées bancaires. La date de début de l'essai gratuit est gardée dans votre iCloud, pour qu'une réinstallation ne le relance pas.</p>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <p>Les notifications (demande de temps, temps terminé, contrôle coupé…) sont envoyées par iCloud et par l'appareil lui-même. Vous pouvez les couper dans Hulotte, ou dans Réglages › Notifications.</p>
+  </section>
+
+  <section>
+    <h2>Ce que nous ne faisons jamais</h2>
+    <ul>
+      <li>Pas de publicité, pas de pistage, pas de revente de données.</li>
+      <li>Pas d'outil d'analyse ni de SDK tiers.</li>
+      <li>Pas de localisation, pas de lecture des messages, des photos ou de l'historique web.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Les enfants</h2>
+    <p>Hulotte est conçue pour être installée et configurée par un parent ou un responsable légal, sur l'appareil de son enfant, avec le Partage familial d'Apple. L'enfant n'a pas de compte Hulotte et ne nous transmet aucune donnée.</p>
+  </section>
+
+  <section>
+    <h2>Vos droits et la suppression</h2>
+    <p>Comme nous ne détenons aucune donnée, tout se gère depuis vos appareils :</p>
+    <ul>
+      <li><strong>Retirer un enfant</strong> dans Hulotte supprime ses données de votre iCloud.</li>
+      <li><strong>Retirer un appareil</strong> supprime ce qu'il avait envoyé.</li>
+      <li>Supprimer Hulotte efface les données locales. Les données iCloud peuvent aussi être supprimées dans Réglages › [votre nom] › iCloud › Gérer le stockage.</li>
+    </ul>
+    <p>Vous disposez des droits prévus par le RGPD (accès, rectification, effacement). Vous pouvez aussi saisir la <a href="https://www.cnil.fr">CNIL</a>.</p>
+  </section>
+
+  <section>
+    <h2>Changements</h2>
+    <p>Si cette politique change, la nouvelle version sera publiée sur cette page avec sa date de mise à jour.</p>
+  </section>
+</main>
+</body>
+</html>
